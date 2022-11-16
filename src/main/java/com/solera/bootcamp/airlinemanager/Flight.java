@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 
 @Entity
 class Flight {
-	
+
 	@Id
 	private Integer idFlight;
 	private String airline;
@@ -18,8 +18,11 @@ class Flight {
 	private boolean luggage_allowed;
 	private Date flight_date;
 
-	public Flight(Integer idFlight, String airline, String origin_city, String destination_city, ArrayList<String> scales,
-			boolean luggage_allowed, Date flight_date) {
+	public Flight() {
+	}
+
+	public Flight(Integer idFlight, String airline, String origin_city, String destination_city,
+			ArrayList<String> scales, boolean luggage_allowed, Date flight_date) {
 		super();
 		this.idFlight = idFlight;
 		this.airline = airline;
@@ -29,7 +32,7 @@ class Flight {
 		this.luggage_allowed = luggage_allowed;
 		this.flight_date = flight_date;
 	}
-	
+
 	public Integer getIdFlight() {
 		return idFlight;
 	}

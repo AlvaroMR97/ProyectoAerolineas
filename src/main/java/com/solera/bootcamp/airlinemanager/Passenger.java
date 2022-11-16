@@ -13,6 +13,9 @@ public class Passenger {
 	private String nationality;
 	private int age;
 
+	public Passenger() {
+	}
+
 	public Passenger(String idDocument, String name, String surname, String nationality, int age) {
 		super();
 		this.idDocument = idDocument;

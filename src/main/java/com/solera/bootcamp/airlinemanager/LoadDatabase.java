@@ -21,8 +21,8 @@ class LoadDatabase {
       log.info("Preloading " + repository.save(new Flight(0, "Madrid vuelos", "Madrid", "Barcelona", 
     		 new ArrayList<String>(), true, new SimpleDateFormat("ddMMyyyy").parse("20112022"))));
     };
-  }
-  
+}
+
   @Bean
   CommandLineRunner initDatabasePassengers(PassengerRepository repository) {
 
