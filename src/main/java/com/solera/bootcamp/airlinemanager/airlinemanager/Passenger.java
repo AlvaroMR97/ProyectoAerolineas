@@ -3,14 +3,14 @@ package com.solera.bootcamp.airlinemanager.airlinemanager;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PassengerBean {
+public class Passenger {
 	private String name;
 	private String surname;
 	private String nationality;
 	private String idDocument;
 	private int age;
 
-	public PassengerBean(String name, String surname, String nationality, String idDocument, int age) {
+	public Passenger(String name, String surname, String nationality, String idDocument, int age) {
 		super();
 		this.name = name;
 		this.surname = surname;

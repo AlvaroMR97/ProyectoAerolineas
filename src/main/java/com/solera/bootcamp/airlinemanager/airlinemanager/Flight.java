@@ -6,7 +6,7 @@ import java.util.Date;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FlightBean {
+public class Flight {
 	private String airline;
 	private String origin_city;
 	private String destination_city;
@@ -14,7 +14,7 @@ public class FlightBean {
 	private boolean luggage_allowed;
 	private Date flight_date;
 
-	public FlightBean(String airline, String origin_city, String destination_city, ArrayList<String> scales,
+	public Flight(String airline, String origin_city, String destination_city, ArrayList<String> scales,
 			boolean luggage_allowed, Date flight_date) {
 		super();
 		this.airline = airline;
