@@ -1,4 +1,4 @@
-package com.solera.bootcamp.airlinemanager;
+package com.solera.bootcamp.airlinemanager.flight;
 
 class FlightNotFoundException extends RuntimeException {
 

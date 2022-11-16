@@ -1,4 +1,4 @@
-package com.solera.bootcamp.airlinemanager;
+package com.solera.bootcamp.airlinemanager.passenger;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -12,7 +12,7 @@ class PassengerNotFoundAdvice {
 	@ResponseBody
 	@ExceptionHandler(PassengerNotFoundException.class)
 	@ResponseStatus(HttpStatus.NOT_FOUND)
-	String employeeNotFoundHandler(PassengerNotFoundException ex) {
+	String passengerNotFoundHandler(PassengerNotFoundException ex) {
 		return ex.getMessage();
 	}
 }

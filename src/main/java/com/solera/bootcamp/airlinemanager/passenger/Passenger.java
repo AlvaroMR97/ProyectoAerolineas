@@ -1,4 +1,4 @@
-package com.solera.bootcamp.airlinemanager;
+package com.solera.bootcamp.airlinemanager.passenger;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

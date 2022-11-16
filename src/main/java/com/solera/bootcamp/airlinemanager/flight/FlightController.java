@@ -1,4 +1,4 @@
-package com.solera.bootcamp.airlinemanager;
+package com.solera.bootcamp.airlinemanager.flight;
 
 import java.util.List;
 

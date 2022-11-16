@@ -1,4 +1,4 @@
-package com.solera.bootcamp.airlinemanager;
+package com.solera.bootcamp.airlinemanager.flight;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,7 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-class Flight {
+public class Flight {
 
 	@Id
 	private Integer idFlight;
