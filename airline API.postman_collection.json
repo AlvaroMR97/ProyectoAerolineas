@@ -1,0 +1,419 @@
+{
+	"info": {
+		"_postman_id": "5d0b9aa7-8078-4b57-8ffc-156f03228ac9",
+		"name": "airline API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET flights",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airline/flights",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET passengers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airline/passengers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"passengers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET origins",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airline/origins",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"origins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET business/{idFlight}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airline/business/{{idFlight}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"business",
+						"{{idFlight}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET flights/{idFlight}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airline/flights/{{idFlight}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"flights",
+						"{{idFlight}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET passengers/{idPassenger}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airline/passengers/{{idPassenger}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"passengers",
+						"{{idPassenger}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET origins/{idOrigin}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airline/origins/{{idOrigin}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"origins",
+						"{{idOrigin}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST flights",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idFlight\":1,\"airline\":\"Madrid vuelos\",\"origin_city\":\"Madrid\",\"destination_city\":\"Barcelona\",\"scales\":[],\"luggage_allowed\":true,\"flight_date\":\"2022-11-19T23:00:00.000+00:00\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airline/flights",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST passengers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idFlight\":1,\"airline\":\"Madrid vuelos\",\"origin_city\":\"Madrid\",\"destination_city\":\"Barcelona\",\"scales\":[],\"luggage_allowed\":true,\"flight_date\":\"2022-11-19T23:00:00.000+00:00\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airline/passengers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"passengers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST origins",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idFlight\":1,\"airline\":\"Madrid vuelos\",\"origin_city\":\"Madrid\",\"destination_city\":\"Barcelona\",\"scales\":[],\"luggage_allowed\":true,\"flight_date\":\"2022-11-19T23:00:00.000+00:00\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airline/origins",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"origins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT flights/{idFlight}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idFlight\":1,\"airline\":\"Barcelona airline\",\"origin_city\":\"Barcelona\",\"destination_city\":\"Madrid\",\"scales\":[],\"luggage_allowed\":true,\"flight_date\":\"2022-11-19T23:00:00.000+00:00\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airline/flights/{{idFlight}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"flights",
+						"{{idFlight}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT passengers/{idPassenger}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idFlight\":1,\"airline\":\"Barcelona airline\",\"origin_city\":\"Barcelona\",\"destination_city\":\"Madrid\",\"scales\":[],\"luggage_allowed\":true,\"flight_date\":\"2022-11-19T23:00:00.000+00:00\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airline/passengers/{{idPassenger}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"passengers",
+						"{{idPassenger}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT origins/{idOrigin}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idFlight\":1,\"airline\":\"Barcelona airline\",\"origin_city\":\"Barcelona\",\"destination_city\":\"Madrid\",\"scales\":[],\"luggage_allowed\":true,\"flight_date\":\"2022-11-19T23:00:00.000+00:00\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/airline/origins/{{idOrigin}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"origins",
+						"{{idOrigin}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE flights/{idFlight}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airline/flights/{{idFlight}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"flights",
+						"{{idFlight}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE passengers/{idPassenger}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airline/passengers/{{idPassenger}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"passengers",
+						"{{idPassenger}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE origins/{idOrigin}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/airline/origins/{{idOrigin}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airline",
+						"origins",
+						"{{idOrigin}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "id"
+		}
+	]
+}
