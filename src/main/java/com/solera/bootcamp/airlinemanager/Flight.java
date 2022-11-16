@@ -1,12 +1,16 @@
-package com.solera.bootcamp.airlinemanager.airlinemanager;
+package com.solera.bootcamp.airlinemanager;
 
 import java.util.ArrayList;
 import java.util.Date;
 
-import org.springframework.stereotype.Component;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-@Component
-public class Flight {
+@Entity
+class Flight {
+	
+	@Id
+	private Integer idFlight;
 	private String airline;
 	private String origin_city;
 	private String destination_city;
@@ -14,15 +18,24 @@ public class Flight {
 	private boolean luggage_allowed;
 	private Date flight_date;
 
-	public Flight(String airline, String origin_city, String destination_city, ArrayList<String> scales,
+	public Flight(Integer idFlight, String airline, String origin_city, String destination_city, ArrayList<String> scales,
 			boolean luggage_allowed, Date flight_date) {
 		super();
+		this.idFlight = idFlight;
 		this.airline = airline;
 		this.origin_city = origin_city;
 		this.destination_city = destination_city;
 		this.scales = scales;
 		this.luggage_allowed = luggage_allowed;
 		this.flight_date = flight_date;
+	}
+	
+	public Integer getIdFlight() {
+		return idFlight;
+	}
+
+	public void setIdFlight(Integer idFlight) {
+		this.idFlight = idFlight;
 	}
 
 	public String getAirline() {
@@ -72,4 +85,5 @@ public class Flight {
 	public void setFlight_date(Date flight_date) {
 		this.flight_date = flight_date;
 	}
+
 }

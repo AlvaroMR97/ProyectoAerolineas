@@ -1,22 +1,33 @@
-package com.solera.bootcamp.airlinemanager.airlinemanager;
+package com.solera.bootcamp.airlinemanager;
 
-import org.springframework.stereotype.Component;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-@Component
+@Entity
 public class Passenger {
+
+	@Id
+	private String idDocument;
 	private String name;
 	private String surname;
 	private String nationality;
-	private String idDocument;
 	private int age;
 
-	public Passenger(String name, String surname, String nationality, String idDocument, int age) {
+	public Passenger(String idDocument, String name, String surname, String nationality, int age) {
 		super();
+		this.idDocument = idDocument;
 		this.name = name;
 		this.surname = surname;
 		this.nationality = nationality;
-		this.idDocument = idDocument;
 		this.age = age;
+	}
+
+	public String getIdDocument() {
+		return idDocument;
+	}
+
+	public void setIdDocument(String idDocument) {
+		this.idDocument = idDocument;
 	}
 
 	public String getName() {
@@ -41,14 +52,6 @@ public class Passenger {
 
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
-	}
-
-	public String getIdDocument() {
-		return idDocument;
-	}
-
-	public void setIdDocument(String idDocument) {
-		this.idDocument = idDocument;
 	}
 
 	public int getAge() {
