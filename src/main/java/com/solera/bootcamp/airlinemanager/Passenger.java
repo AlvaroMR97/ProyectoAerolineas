@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 public class Passenger {
 
 	@Id
+	private Integer idPassenger;
 	private String idDocument;
 	private String name;
 	private String surname;
@@ -16,13 +17,22 @@ public class Passenger {
 	public Passenger() {
 	}
 
-	public Passenger(String idDocument, String name, String surname, String nationality, int age) {
+	public Passenger(Integer idPassenger, String idDocument, String name, String surname, String nationality, int age) {
 		super();
+		this.idPassenger = idPassenger;
 		this.idDocument = idDocument;
 		this.name = name;
 		this.surname = surname;
 		this.nationality = nationality;
 		this.age = age;
+	}
+
+	public Integer getIdPassenger() {
+		return idPassenger;
+	}
+
+	public void setIdPassenger(Integer idPassenger) {
+		this.idPassenger = idPassenger;
 	}
 
 	public String getIdDocument() {
